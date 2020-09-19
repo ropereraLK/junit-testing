@@ -1,6 +1,7 @@
 package com.junittesting.testing;
 
 public class TestCalculator {
+	private int nbErrors = 0;
 
 	public void testAdd() {
 
@@ -13,4 +14,16 @@ public class TestCalculator {
 		}
 		
 	}
+
+	public int getNbErrors() {
+		return nbErrors;
+	}
+
+	public void setNbErrors(int nbErrors) {
+		this.nbErrors = nbErrors;
+	}
+
+	 
+
+ 
 }
