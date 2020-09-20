@@ -16,8 +16,8 @@ public class ListOfNumbers {
 		}
 	}
 
-	public void writeList() {
-		try {
+	public void writeList() throws IOException, IndexOutOfBoundsException {
+	 
 			// The FileWriter constructor throws IOException, which must be caught.
 			PrintWriter out = new PrintWriter(new FileWriter("OutFile.txt"));
 
@@ -26,8 +26,6 @@ public class ListOfNumbers {
 				out.println("Value at: " + i + " = " + list.get(i));
 			}
 			out.close();
-		} catch (IOException|IndexOutOfBoundsException ex) {
-
-		}
+		 
 	}
 }
