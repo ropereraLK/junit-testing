@@ -26,7 +26,7 @@ public class ListOfNumbers {
 				out.println("Value at: " + i + " = " + list.get(i));
 			}
 			out.close();
-		} catch (Exception ex) {
+		} catch (IOException|IndexOutOfBoundsException ex) {
 
 		}
 	}
